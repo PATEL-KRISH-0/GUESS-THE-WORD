@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --black: black;
+}
+
+* {
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 52.5%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+main img {
+    mix-blend-mode: multiply;
+}
+
+.hint {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.text-Dissplay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.word-Charecter {
+    display: flex;
+    flex-flow: row;
+}
+
+.word {
+    padding: 4px 8px;
+    margin: 10px;
+    border: 2px solid black;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.enter-Char {
+    font-size: 2rem;
+    margin: 0rem;
+}
+
+.enter-Char-Text {
+    margin: 2rem;
+    font-size: 20px;
+
+}
+
+.enter-Char-Box {
+    padding: .5rem;
+    font-size: 2rem;
+    width: 33px;
+    border: 2px solid;
+}
+
+.btns {
+    display: flex;
+}
+
+.btn {
+    margin: 0px 10px;
+    align-items: center;
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    border: 0;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.btn:active,
+.btn:hover {
+    outline: 0;
+}
+
+.btn span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    transition: 300ms;
+}
+
+.btn:hover span {
+    background: none;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 24px;
+        min-width: 196px;
+    }
+}
+
+.toast {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
